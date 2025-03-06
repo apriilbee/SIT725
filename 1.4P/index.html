@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SIT 725 Prac 1</title>
         <meta name="description" content="basic template for SIT 725 Prac 1" />
-        <meta name="author" content="April Dae  Bation" />
+        <meta name="author" content="April Dae Bation" />
         <meta property="og:title" content="SIT 725 Prac 1" />
         <meta property="og:type" content="website" />
-        <meta propery="og:description" content="basic template for SIT 725 Prac 1" />
+        <meta property="og:description" content="basic template for SIT 725 Prac 1" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
@@ -22,12 +22,18 @@
                     <h1 id="heading" class="center-align">SIT 725</h1>
                 </div>
 
-                <div class="col s12 center-align">
-                    <a onclick="changeText()" class="waves-effect waves-light btn">Change Text</a>
+                <div class="col s12 center-align" style="margin-top: 20px">
+                    <a onclick="showMessage('orange')" class="waves-effect waves-light btn orange">Orange</a>
+                    <a onclick="showMessage('red')" class="waves-effect waves-light btn red">Red</a>
+                    <a onclick="showMessage('green')" class="waves-effect waves-light btn green">Green</a>
+                </div>
+
+                <div class="col s12 center-align" style="margin-top: 20px">
+                    <h5 id="messageArea"></h5>
                 </div>
             </div>
         </div>
-    </body>
 
-    <script src="script.js"></script>
+        <script src="script.js"></script>
+    </body>
 </html>
