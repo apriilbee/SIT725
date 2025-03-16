@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "name": "sit725-2.2p-prac",
+  "description": "sit 725 T2 week 2 prac",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "April Dae Bation",
+  "license": "MIT"
+}
