@@ -1,0 +1,100 @@
+/* General body and layout styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.navbar .logo img {
+    height: 50px;
+    margin-top: 30px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    color: #00bcd4; /* Light blue hover effect */
+}
+
+/* Menu icon (hamburger) styling */
+.navbar .menu-icon {
+    display: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .navbar .menu-icon {
+        display: block;
+    }
+}
+
+.materialboxed-image {
+    margin: 0 auto;
+    height: 400px;
+}
+
+.main-body {
+    background-color: #b997f0;
+    color: white;
+    height: 100%;
+}
+
+.click-me-button {
+    background-color: #26472e;
+    margin-top: 50px;
+}
+
+.card-reveal .card-text {
+    color: black;
+}
+
+.barrio-regular {
+    font-family: "Barrio", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rouge-script-regular {
+    font-family: "Rouge Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
