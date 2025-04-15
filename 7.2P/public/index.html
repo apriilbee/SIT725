@@ -1,0 +1,26 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Socket.IO Random Number</title>
+        <!-- socket IO served by the server -->
+        <script src="/socket.io/socket.io.js"></script>
+    </head>
+    <body>
+        <h1>Socket.IO Random Number</h1>
+        <div id="number">Waiting for data...</div>
+
+        <script>
+            const socket = io();
+
+            socket.on("number", (data) => {
+                const container = document.getElementById("number");
+                const newItem = document.createElement("div");
+                newItem.textContent = `Random number: ${data}`;
+                container.appendChild(newItem);
+                console.log("Random Number: " + data);
+            });
+        </script>
+    </body>
+</html>
